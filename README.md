@@ -6,9 +6,28 @@ This repository is still under constructions.
 If you have any questions about the code, please contact me. Thanks!
 
 
+### Usage
 
-##) PF-Net dataset
-For PF-Net dataset (CVPR2020 PF-Net: Point Fractal Network for 3D Point Cloud Completion)
+#### 1) Envrionment & prerequisites
+
+- Pytorch 1.2.0
+- CUDA 10.0
+- Python 3.7
+- [Visdom](https://github.com/facebookresearch/visdom)
+- [Open3D](http://www.open3d.org/docs/release/index.html#python-api-index)
+
+#### 2) Compile
+
+Compile our extension modules:  
+
+    cd emd
+    python3 setup.py install
+    cd expansion_penalty
+    python3 setup.py install
+    cd MDS
+    python3 setup.py install
+
+##) ShapenetPart dataset 
 ```
   cd dataset
   bash download_shapenet_part16_catagories.sh
@@ -26,10 +45,9 @@ For PF-Net dataset (CVPR2020 PF-Net: Point Fractal Network for 3D Point Cloud Co
 python Train_FPNet.py 
 ```
 Change ‘crop_point_num’ to control the number of missing points.
-Change ‘point_scales_list ’to control different input resolutions.
 Change ‘D_choose’to control without using D-net.
 
-##) Evaluate the Performance on ShapeNet
+##) Evaluate the Performance on ShapeNet and other datasets
 ```
 python show_recon.py
 ```
@@ -37,7 +55,7 @@ Show the completion results, the program will generate txt files in 'test-exampl
 ```
 python show_CD.py
 ```
-Show the Chamfer Distances and two metrics in our paper.
+Show the Chamfer Distancesm, EMD and F1.
 
 ##) Visualization of csv File
 
@@ -49,4 +67,4 @@ change ‘infile’and  ‘infile_real’to select different incomplete point cl
 
 ##5) Visualization of Examples
 
-Using Meshlab to visualize  the txt files.
+Using Meshlab or Cloudcompare to visualize the txt/csv files.
