@@ -8,13 +8,13 @@ If you have any questions about the code, please contact me. Thanks!
 
 ### Usage
 
-#### 1) Envrionment & prerequisites
+#### 1)  Recommended Envrionment & prerequisites
 
-- Pytorch 1.2.0
+- Pytorch 1.2.0 (1.0.1 and 1.5.0 also works)
 - CUDA 10.0
 - Python 3.7
-- [Visdom](https://github.com/facebookresearch/visdom)
-- [Open3D](http://www.open3d.org/docs/release/index.html#python-api-index)
+- [Visdom](https://github.com/facebookresearch/visdom) (optional)
+- [Open3D](http://www.open3d.org/docs/release/index.html#python-api-index)(optional for load different dataset)
 
 #### 2) Compile
 
