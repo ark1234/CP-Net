@@ -18,7 +18,7 @@ If you have any questions about the code, please contact me. Thanks!
 
 #### 2) Compile
 
-Compile extension modules from [msn](https://github.com/Colin97/MSN-Point-Cloud-Completion) for Evaluate the Performance with EMD and F1 socre (No need if only use Chamfer Distancesm):  
+Compile extension modules from [msn](https://github.com/Colin97/MSN-Point-Cloud-Completion) for Evaluate the Performance with EMD and F1 socre (No need if only use Chamfer Distance):  
 
     git clone https://github.com/Colin97/MSN-Point-Cloud-Completion
     cd emd
@@ -28,6 +28,7 @@ Compile extension modules from [msn](https://github.com/Colin97/MSN-Point-Cloud-
     cd MDS
     python3 setup.py install
 
+And add the related path to show_CD.py
 ### ShapenetPart dataset 
 ```
   cd dataset
@@ -56,7 +57,7 @@ Show the completion results, the program will generate txt files in 'test-exampl
 ```
 python show_CD.py
 ```
-Show the Chamfer Distancesm, EMD and F1.
+Show the Chamfer Distance, EMD and F1.
 
 ### Visualization of csv File
 
