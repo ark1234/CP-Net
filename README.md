@@ -74,5 +74,4 @@ Using Meshlab or Cloudcompare to visualize the txt/csv files.
 
 ### Acknowledgemets
 
-This project is built upon [<a href="https://github.com/zztianzz/PF-Net-Point-Fractal-Network">PF-Net-Point-Fractal-Network</a>], [<a href="https://github.com/Colin97/MSN-Point-Cloud-Completion">MSN-Point-Cloud-Completion</a>], 
-[<a href="https://github.com/laughtervv/SGPN">SGPN</a>] and [<a href="https://github.com/WangYueFt/dgcnn">DGCNN</a>]
+This project is built upon [<a href="https://github.com/zztianzz/PF-Net-Point-Fractal-Network">PF-Net-Point-Fractal-Network</a>], [<a href="https://github.com/Colin97/MSN-Point-Cloud-Completion">MSN-Point-Cloud-Completion</a>] and [<a href="https://github.com/WangYueFt/dgcnn">DGCNN</a>]
