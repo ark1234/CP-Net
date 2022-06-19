@@ -109,6 +109,8 @@ class PointcloudCls(nn.Module):
         x = self.fc4(x)
         return F.log_softmax(x, dim=1)
 
+    
+####### Our Point Expand Decoder
 class _netG(nn.Module):
     def  __init__(self,num_scales,each_scales_size,point_scales_list,crop_point_num):
         super(_netG,self).__init__()
@@ -211,7 +213,10 @@ class _netG(nn.Module):
         # print("pc_xyz_middle",pc_xyz_middle.shape)
         # print("pc_xyz_high",pc_xyz_high.shape)
         return pc_xyz_low, pc_xyz_middle, pc_xyz_high
-
+####### Our Point Expand Decoder
+    
+    
+    
 class _netlocalD(nn.Module):
     def __init__(self,crop_point_num):
         super(_netlocalD,self).__init__()
@@ -250,7 +255,9 @@ class _netlocalD(nn.Module):
         return x
 
 
-
+    
+    
+####### Our Multi-Edge Encoder
 class Latentfeature(nn.Module):
     def __init__(self,num_scales,each_scales_size,point_scales_list):
         super(Latentfeature, self).__init__()
@@ -431,6 +438,7 @@ class Latentfeature(nn.Module):
         # exit()
         return latentfeature
 
+####### Our Multi-Edge Encoder   
 
 #new
 def knn(x, k):
